@@ -58,9 +58,9 @@ COPY ./install_additional_ros_stuff.sh /root/install_additional_ros_stuff.sh
 RUN chmod a+x /root/install_additional_ros_stuff.sh
 RUN /root/install_additional_ros_stuff.sh
 
-WORKDIR /Dash
-COPY ./requirements.txt /root/requirements.txt
-RUN pip install -r /root/requirements.txt
+# WORKDIR /Dash
+# COPY ./requirements.txt /root/requirements.txt
+# RUN pip install -r /root/requirements.txt
 
 RUN mkdir -p /root/.colcon
 ADD ./defaults.yaml /root/.colcon/defaults.yaml
