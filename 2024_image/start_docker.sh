@@ -1,0 +1,1 @@
+sudo docker run --privileged --name dash_docker --restart always --device /dev/gpiomem:/dev/gpiomem --device /dev/mem:/dev/mem --env="DISPLAY" --net=host -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/va/Dash:/home/va/Dash  -v /home/va/bags:/home/va/bags ros:humble-dash

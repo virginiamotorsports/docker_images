@@ -1,0 +1,1 @@
+sudo docker run -it --privileged --device /dev/ttyUSB0:/dev/ttyUSB0 --device /dev/gpiomem:/dev/gpiomem --device /dev/mem:/dev/mem --env="DISPLAY" --net=host -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/va/VM-FSAE-Software:/VM-FSAE-Software  --rm -v /home/va/bags:/bags chloes:latest /bin/bash 
